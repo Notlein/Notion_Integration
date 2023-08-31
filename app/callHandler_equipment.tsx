@@ -6,7 +6,7 @@ async function getDB(database : string) {
   const options = {
     method: 'POST',
     headers: {
-      Authorization: `Bearer secret_Vbr51OzQPAue1DadDWYWVTQMlk5myAFkVWsk4r204tL`,
+      Authorization: `Bearer ${process.env.NOTION_API_KEY}`,
       accept: 'application/json',
       'Notion-Version': '2022-06-28',
       'content-type': 'application/json'
